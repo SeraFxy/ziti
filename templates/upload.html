@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.center{
+  height:300px;
+  width:50%;
+  border:black solid 1px;
+  margin-left:25%;
+
+
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title >汉字字体识别页面</title>
+</head>
+
+ <h1 align="center">选择文件上传</h1>
+
+<body>
+
+    <div class="center" >
+    <form action="" enctype='multipart/form-data' method='POST'>
+        <input type="file" name="file">
+        <input type="submit" value="上传">
+         <h2>上传图片字体识别为：
+            <font color="red">
+                {{result}}
+            </font>
+
+         </h2>
+        <img src="static/uploads/{{imgpath}}" height="100" width="100" alt="aaa "/>
+    </form>
+    </div>
+
+
+</body>
+</html>
